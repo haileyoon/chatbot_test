@@ -9,7 +9,7 @@ API_KEY = os.getenv("PINECONE_API_KEY")
 
 def get_response(question: str):
     from pinecone import Pinecone
-    file_path = "/Users/haileyoon/code/comfortwomen_text.txt"
+    file_path = "comfortwomen_text.txt"
     with open(file_path, encoding="utf-8") as f:
         raw = f.read()
     paragraphs = [p.strip() for p in raw.split("\n\n") if p.strip()]
