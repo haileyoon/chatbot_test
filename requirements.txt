@@ -3,4 +3,4 @@ openai
 python-dotenv
 gunicorn
 requests
-pinecone-client
+pinecone
